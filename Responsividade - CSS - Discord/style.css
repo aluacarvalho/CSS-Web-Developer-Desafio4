@@ -1,0 +1,222 @@
+@import url('reset.css');
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 428px;
+    height: 2792px;
+    top: -360px;
+    left: 722px;
+}
+
+img {
+    max-width: 100%;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/images/header-mobile.png");
+    background-size: cover;
+    background-position: bottom center;
+    color: #FFFFFF;
+    max-width: 428px;
+    height: 500px;
+    padding: 60px 24px 60px 24px;
+    gap: 16px;
+    align-items: center;
+}
+
+h1, h2, p {
+    text-align: left;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+button {
+    border-radius: 28px;
+    width: 381px;
+    height: 54px;
+    align-items: center;
+}
+
+.download { 
+    background-color: #FFFFFF;
+    color: #23272A;
+    font-size: 16px;
+    border: none;
+}
+
+.open { 
+    background-color: #23272A;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    color: #23272A;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    max-width: 428px;
+    padding: 40px 24px 40px 24px;
+    gap: 27px;
+}
+
+#espaco h2 {
+    font-size: 24px;
+    line-height: 32.68px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+#encontrar {
+    background: #F6F6F6;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+#encontrar h2 {
+    font-size: 24px;
+    line-height: 32.68px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+#poucos-muitos h2 {
+    font-size: 24px;
+    line-height: 32.68px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+#tecnologia {
+    background: #F6F6F6;
+    color: #23272A;
+}
+
+#tecnologia h2 {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+footer { 
+    max-width: 428px;
+    height: 140px;
+    top: 2652px;
+    padding: 44px 134px 51px 133px;    
+    background: #23272A;
+}
+
+span {
+    color: #F6F6F6;
+    font-size: 8px;
+}
+
+@media screen and (min-width: 820px) {
+    header { 
+        background-image: url("/images/background header.png");
+        flex: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 820px;
+        max-width: 1280px;
+        height: 459px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header p {
+        text-align: center;
+    }
+
+    h1 { 
+        font-size: 56px;
+    }
+
+    main { 
+        flex: 1;
+        min-width: 820px;
+        max-width: 1280px;
+    }
+
+    section {
+        flex: 1;
+        flex-direction: row;
+        max-height: 448px;
+        min-width: 820px;
+        max-width: 1280px;
+        flex-basis: 500px;
+        align-items: center;
+    }
+
+    section img {
+        width: 600px;
+        height: 350px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #espaco { 
+        display: flex;
+        justify-content: right;
+        align-items: right;
+    }
+
+    #espaco h2 {
+        font-size: 2.5rem;
+    }
+
+    #espaco p {
+        font-size: 1rem;
+    }
+
+    #encontrar h2 {
+        font-size: 2.5rem;
+    }
+
+    #encontrar p {
+        font-size: 1rem;
+    }
+
+    #poucos-muitos h2 {
+        font-size: 2.5rem;
+    }
+
+    #poucos-muitos p {
+        font-size: 1rem;
+    }
+
+    #tecnologia { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-height: 740px;
+    }
+
+    #tecnologia h2 {
+        font-size: 2.5rem;
+    }
+
+    #tecnologia p {
+        font-size: 1rem;
+    }
+
+    footer { 
+        min-width: 820px;
+        text-align: center;
+    }
+}
